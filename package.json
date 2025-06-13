@@ -8,6 +8,7 @@
     "lint": "eslint . --ext .ts,.vue",
     "test": "vitest",
     "storybook": "nuxt storybook",
+    "storybook:build": "nuxt storybook build",
     "postinstall": "husky install",
     "generate:api": "openapi-typescript ./nudger-api.json -o src/api/client.ts"
   },
@@ -39,7 +40,11 @@
     "openapi-typescript": "^6.0.0",
     "prettier": "^3.5.3",
     "vitest": "^1.6.1",
-    "vue": "^3.5.16"
+    "vue": "^3.5.16",
+    "@storybook-vue/nuxt": "^8.3.5",
+    "@nuxtjs/storybook": "^8.3.5",
+    "@storybook/vue3": "^7.6.0",
+    "@storybook/addon-essentials": "^7.6.0"
   },
   "packageManager": "pnpm@8.15.0+sha512.ea45517d5285d123eac02c3793505fa1fd6da90a2fc60d1e8d9e0c1e9292886ecfaff513f062b9d1cc8021bb8615033b1ac5bea3b2ee3fc165a6d7034bbe6b03",
   "dependencies": {
