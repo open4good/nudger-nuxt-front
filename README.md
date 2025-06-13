@@ -36,6 +36,10 @@ pnpm test -- --run
 - Vercel / Render
 - Docker + serveur SSH
 
+## Progressive Web App
+Cette application peut s'installer comme une PWA. Le module `@vite-pwa/nuxt` gère
+le manifeste, les icônes (voir `public/icon.png`) et le service worker.
+
 ## Contribuer
 Les commits doivent suivre Conventional Commits via `pnpm commit`. Consultez `CONTRIBUTING.md` pour le détail de la procédure.
 

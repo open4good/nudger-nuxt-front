@@ -11,7 +11,27 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxt/image',
     '@nuxt/devtools',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@vite-pwa/nuxt'
   ],
-  // TODO: add runtime config and other settings
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Nuder.fr',
+      short_name: 'Nuder',
+      lang: 'fr',
+      description: 'Nuder.fr front-end',
+      icons: [
+        {
+          src: '/icon.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable'
+        }
+      ]
+    },
+    workbox: {
+      cleanupOutdatedCaches: true
+    }
+  }
 })
