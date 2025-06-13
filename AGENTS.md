@@ -21,7 +21,7 @@ These guidelines apply to all folders in this repository.
 
 ## Testing
 - Tests use Vitest and live next to the code with a `.spec.ts` suffix.
-- Run tests with `pnpm test`.
+- Run tests with `pnpm test --run`.
 
 ## Storybook
 - Stories live next to components as `*.stories.ts` or `*.stories.mdx`.
