@@ -11,8 +11,7 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxt/image',
     '@nuxt/devtools',
-    '@vueuse/nuxt',
-    'nuxt-ui'
+    '@vueuse/nuxt'
   ],
   // TODO: add runtime config and other settings
 })
