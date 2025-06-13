@@ -25,6 +25,14 @@ pnpm install
 pnpm dev
 ```
 
+## Build
+
+La compilation requiert davantage de mémoire pour Node.js. Le script `pnpm build` définit automatiquement `NODE_OPTIONS='--max-old-space-size=8192'`.
+
+```bash
+pnpm build
+```
+
 ## PWA
 
 L'application peut être installée comme une Progressive Web App. Le service worker et le manifeste sont gérés par le module `@vite-pwa/nuxt`.
