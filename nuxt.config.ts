@@ -24,6 +24,14 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL
     }
   },
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', name: 'English' },
+      { code: 'fr', iso: 'fr-FR', name: 'Français' }
+    ],
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default'
+  },
   pwa: {
     registerType: 'autoUpdate',
     manifest: {
