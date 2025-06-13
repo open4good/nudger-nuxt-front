@@ -16,6 +16,14 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vite-pwa/nuxt'
   ],
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', name: 'English' },
+      { code: 'fr', iso: 'fr-FR', name: 'Français' }
+    ],
+    defaultLocale: 'fr',
+    strategy: 'prefix_except_default'
+  },
   runtimeConfig: {
     strapiToken: process.env.STRAPI_TOKEN,
     public: {
