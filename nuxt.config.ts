@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxt/image',
     '@nuxt/devtools',
+    '@nuxtjs/storybook',
     '@vueuse/nuxt',
     '@vite-pwa/nuxt'
   ],
