@@ -11,7 +11,11 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
     '@nuxt/image',
     '@nuxt/devtools',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@nuxtjs/storybook'
   ],
-  // TODO: add runtime config and other settings
+  storybook: {
+    port: 6006,
+    route: '/_storybook'
+  }
 })
