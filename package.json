@@ -10,7 +10,8 @@
     "storybook": "nuxt storybook",
     "storybook:build": "nuxt storybook build",
     "postinstall": "husky install",
-    "generate:api": "openapi-typescript ./nudger-api.json -o src/api/client.ts"
+    "generate:api": "openapi-typescript ./nudger-api.json -o src/api/client.ts",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.5.0",
@@ -43,7 +44,12 @@
     "@storybook-vue/nuxt": "^8.3.5",
     "@nuxtjs/storybook": "^8.3.5",
     "@storybook/vue3": "^7.6.0",
-    "@storybook/addon-essentials": "^7.6.0"
+    "@storybook/addon-essentials": "^7.6.0",
+    "semantic-release": "^23.0.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.2",
+    "@semantic-release/npm": "^11.0.0"
   },
   "packageManager": "pnpm@8.15.0+sha512.ea45517d5285d123eac02c3793505fa1fd6da90a2fc60d1e8d9e0c1e9292886ecfaff513f062b9d1cc8021bb8615033b1ac5bea3b2ee3fc165a6d7034bbe6b03",
   "dependencies": {

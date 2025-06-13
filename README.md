@@ -64,6 +64,12 @@ Le projet s'appuie sur plusieurs variables pour son runtime :
 - Vercel / Render
 - Docker + serveur SSH
 
+## Publication des versions
+Les releases sont gérées par [semantic-release](https://github.com/semantic-release/semantic-release).
+Le workflow GitHub **Release** peut être déclenché manuellement pour générer un
+changelog, créer un tag et mettre à jour la version du projet. Vous pouvez
+également exécuter `npx semantic-release` localement pour le même résultat.
+
 ## Contribuer
 Les commits doivent suivre Conventional Commits via `pnpm commit`. Consultez `CONTRIBUTING.md` pour le détail de la procédure.
 
