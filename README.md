@@ -25,6 +25,19 @@ pnpm install
 pnpm dev
 ```
 
+## Hydratation partielle
+
+Le plugin `islands.client.ts` enregistre globalement le composant `LazyHydrate`.
+Celui‑ci permet de différer l'hydratation d'une portion de page.
+
+```vue
+<template>
+  <LazyHydrate when-visible>
+    <Slider />
+  </LazyHydrate>
+</template>
+```
+
 ## Tests
 
 ```bash
