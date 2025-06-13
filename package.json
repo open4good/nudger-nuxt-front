@@ -11,5 +11,13 @@
     "postinstall": "husky install",
     "generate:api": "openapi-typescript https://example.com/openapi.json -o src/api/client.ts"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nuxt": "^3.11.0",
+    "eslint": "^8.0.0",
+    "husky": "^9.0.0",
+    "vitest": "^1.0.0",
+
+    "openapi-typescript": "^6.0.0"
+ },
+  "packageManager": "pnpm@8.15.0+sha512.ea45517d5285d123eac02c3793505fa1fd6da90a2fc60d1e8d9e0c1e9292886ecfaff513f062b9d1cc8021bb8615033b1ac5bea3b2ee3fc165a6d7034bbe6b03"
 }
