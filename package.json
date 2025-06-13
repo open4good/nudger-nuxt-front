@@ -1,0 +1,15 @@
+{
+  "name": "nudger-nuxt-front",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "lint": "eslint . --ext .ts,.vue",
+    "test": "vitest",
+    "storybook": "nuxt storybook",
+    "postinstall": "husky install",
+    "generate:api": "openapi-typescript https://example.com/openapi.json -o src/api/client.ts"
+  },
+  "devDependencies": {}
+}
