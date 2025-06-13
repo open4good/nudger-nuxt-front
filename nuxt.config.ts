@@ -57,7 +57,7 @@ export default defineNuxtConfig({
     workerThreads: true,
     cacheDir: '.nuxt/.vite-cache',
     ssr: {
-      noExternal: ['vue-lazy-hydration', '@nuxthq/ui']
+      noExternal: ['vue-lazy-hydration', '@nuxt/ui']
     },
     resolve: {
       alias: {
