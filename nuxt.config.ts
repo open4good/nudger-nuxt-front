@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   ssr: true,
+  srcDir: 'src',
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
