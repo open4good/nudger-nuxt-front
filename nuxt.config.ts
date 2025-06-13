@@ -22,4 +22,11 @@ export default defineNuxtConfig({
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL
     }
   }
+  ,vite: {
+    resolve: {
+      alias: {
+        vue: 'vue/dist/vue.runtime.esm-bundler.js'
+      }
+    }
+  }
 })
