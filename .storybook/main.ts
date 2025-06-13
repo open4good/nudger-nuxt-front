@@ -1,7 +1,12 @@
-import { defineNuxtConfig } from 'nuxt/config'
+import type { StorybookConfig } from '@storybook-vue/nuxt'
 
-export default defineNuxtConfig({
+const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(js|ts|mdx)'],
   addons: ['@storybook/addon-essentials'],
-  // TODO: nuxt-storybook setup
-})
+  framework: {
+    name: '@storybook-vue/nuxt',
+    options: {},
+  },
+}
+
+export default config
