@@ -11,11 +11,14 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
     '@nuxt/image',
-    '@nuxt/devtools',
-    '@nuxtjs/storybook',
+    process.env.NODE_ENV !== 'production' && '@nuxt/devtools',
+    process.env.NODE_ENV !== 'production' && '@nuxtjs/storybook',
     '@vueuse/nuxt',
     '@vite-pwa/nuxt'
-  ],
+  ].filter(Boolean),
+  devtools: {
+    enabled: process.env.NODE_ENV !== 'production'
+  },
   i18n: {
     locales: [
       { code: 'en', iso: 'en-US', name: 'English' },
@@ -49,9 +52,13 @@ export default defineNuxtConfig({
         }
       ]
     }
-  }
-  ,vite: {
+  },
+  vite: {
     workerThreads: true,
+    cacheDir: '.nuxt/.vite-cache',
+    ssr: {
+      noExternal: ['vue-lazy-hydration', '@nuxthq/ui']
+    },
     resolve: {
       alias: {
         vue: 'vue/dist/vue.runtime.esm-bundler.js'
