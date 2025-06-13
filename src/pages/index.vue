@@ -1,5 +1,5 @@
 <template>
-  <Card>Welcome to Nuxt!</Card>
+  <Card>Welcome to Nudger !</Card>
 </template>
 
 <script setup lang="ts">

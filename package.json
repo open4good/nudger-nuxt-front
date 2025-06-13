@@ -27,7 +27,6 @@
     "@typescript-eslint/eslint-plugin": "^8.34.0",
     "@typescript-eslint/parser": "^8.34.0",
     "@vite-pwa/nuxt": "^1.0.4",
-    "@vitejs/plugin-vue": "^5.2.4",
     "@vue/test-utils": "^2.4.6",
     "@vueuse/nuxt": "^13.3.0",
     "eslint": "^8.0.0",

@@ -42,10 +42,16 @@ export default defineNuxtConfig({
     }
   }
   ,vite: {
+    workerThreads: true,
     resolve: {
       alias: {
         vue: 'vue/dist/vue.runtime.esm-bundler.js'
       }
     }
+  },
+  experimental: {
+    inlineSSRStyles: true
   }
+
+
 })
