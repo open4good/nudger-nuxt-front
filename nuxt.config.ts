@@ -13,5 +13,12 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     '@vueuse/nuxt'
   ],
-  // TODO: add runtime config and other settings
+  runtimeConfig: {
+    strapiToken: process.env.STRAPI_TOKEN,
+    public: {
+      strapiUrl: process.env.STRAPI_URL || 'http://localhost:1337',
+      plausibleDomain: process.env.NUXT_PUBLIC_PLAUSIBLE_DOMAIN,
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL
+    }
+  }
 })

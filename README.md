@@ -31,6 +31,16 @@ pnpm dev
 pnpm test -- --run
 ```
 
+## Variables d'environnement
+
+Le projet s'appuie sur plusieurs variables pour son runtime :
+
+- `STRAPI_URL` — URL de l'instance Strapi utilisée par l'application.
+- `STRAPI_TOKEN` — jeton d'authentification Strapi (utilisé côté serveur).
+- `NUXT_PUBLIC_PLAUSIBLE_DOMAIN` — domaine suivi par Plausible Analytics.
+- `NUXT_PUBLIC_SITE_URL` — URL publique du site pour le SEO.
+- `FIGMA_TOKEN` — jeton utilisé pour générer les design tokens.
+
 ## Déploiement
 - GitHub Pages via `deploy-static.yml`
 - Vercel / Render
