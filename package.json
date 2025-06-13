@@ -9,7 +9,7 @@
     "test": "vitest",
     "storybook": "nuxt storybook",
     "postinstall": "husky install",
-    "generate:api": "openapi-typescript https://petstore.swagger.io/v2/swagger.json -o src/api/client.ts"
+    "generate:api": "openapi-typescript ./nudger-api.json -o src/api/client.ts"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.5.0",
