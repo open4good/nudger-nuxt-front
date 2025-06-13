@@ -25,6 +25,11 @@ pnpm install
 pnpm dev
 ```
 
+## PWA
+
+L'application peut être installée comme une Progressive Web App. Le service worker et le manifeste sont gérés par le module `@vite-pwa/nuxt`.
+
+
 ## Hydratation partielle
 
 Le plugin `islands.client.ts` enregistre globalement le composant `LazyHydrate`.
