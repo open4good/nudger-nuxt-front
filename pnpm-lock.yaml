@@ -55,23 +55,23 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(semantic-release@23.1.1)
       '@semantic-release/github':
-        specifier: ^9.2.2
+        specifier: ^9.2.6
         version: 9.2.6(semantic-release@23.1.1)
       '@semantic-release/npm':
-        specifier: ^11.0.0
+        specifier: ^11.0.3
         version: 11.0.3(semantic-release@23.1.1)
       '@storybook-vue/nuxt':
         specifier: ^8.3.5
         version: 8.3.5(eslint@8.57.1)(nuxt@3.17.5)(rollup@4.43.0)(storybook@8.6.14)(typescript@5.8.3)(vite@6.3.5)(vue@3.5.16)
       '@storybook/addon-essentials':
-        specifier: ^7.6.0
+        specifier: ^7.6.20
         version: 7.6.20(react-dom@18.3.1)(react@18.3.1)
       '@storybook/vue3':
-        specifier: ^7.6.0
+        specifier: ^7.6.20
         version: 7.6.20(vue@3.5.16)
       '@tsconfig/node18':
-        specifier: ^1.0.1
-        version: 1.0.3
+        specifier: ^18.2.4
+        version: 18.2.4
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.34.0
         version: 8.34.0(@typescript-eslint/parser@8.34.0)(eslint@8.57.1)(typescript@5.8.3)
@@ -88,16 +88,16 @@ importers:
         specifier: ^13.3.0
         version: 13.3.0(nuxt@3.17.5)(vue@3.5.16)
       eslint:
-        specifier: ^8.0.0
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-config-prettier:
         specifier: ^10.1.5
         version: 10.1.5(eslint@8.57.1)
       eslint-plugin-vue:
-        specifier: ^9.22.0
+        specifier: ^9.33.0
         version: 9.33.0(eslint@8.57.1)
       husky:
-        specifier: ^9.0.0
+        specifier: ^9.1.7
         version: 9.1.7
       jsdom:
         specifier: ^26.1.0
@@ -106,13 +106,13 @@ importers:
         specifier: ^3.17.5
         version: 3.17.5(eslint@8.57.1)(rollup@4.43.0)(typescript@5.8.3)(vite@6.3.5)
       openapi-typescript:
-        specifier: ^6.0.0
+        specifier: ^6.7.6
         version: 6.7.6
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
       semantic-release:
-        specifier: ^23.0.0
+        specifier: ^23.1.1
         version: 23.1.1(typescript@5.8.3)
       vitest:
         specifier: ^1.6.1
@@ -6169,8 +6169,8 @@ packages:
     requiresBuild: true
     dev: true
 
-  /@tsconfig/node18@1.0.3:
-    resolution: {integrity: sha512-RbwvSJQsuN9TB04AQbGULYfOGE/RnSFk/FLQ5b0NmDf5Kx2q/lABZbHQPKCO1vZ6Fiwkplu+yb9pGdLy1iGseQ==}
+  /@tsconfig/node18@18.2.4:
+    resolution: {integrity: sha512-5xxU8vVs9/FNcvm3gE07fPbn9tl6tqGGWA9tSlwsUEkBxtRnTsNmwrV8gasZ9F/EobaSv9+nu8AxUKccw77JpQ==}
     dev: true
 
   /@tybys/wasm-util@0.9.0:
@@ -7636,6 +7636,7 @@ packages:
 
   /boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+    requiresBuild: true
     dev: true
 
   /bottleneck@2.19.5:
