@@ -49,6 +49,9 @@ Celui‑ci permet de différer l'hydratation d'une portion de page.
 pnpm test -- --run
 ```
 
+## Build SSR
+Si `pnpm build:ssr` échoue avec une erreur Tailwind CSS, consultez [docs/troubleshooting.md](docs/troubleshooting.md).
+
 ## Variables d'environnement
 
 Le projet s'appuie sur plusieurs variables pour son runtime :

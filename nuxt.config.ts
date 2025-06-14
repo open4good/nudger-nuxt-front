@@ -18,6 +18,11 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vite-pwa/nuxt'
   ].filter(Boolean),
+  tailwindcss: {
+    experimental: {
+      tailwindcss4: true
+    }
+  },
   devtools: {
     enabled: process.env.NODE_ENV !== 'production'
   },
@@ -53,6 +58,11 @@ export default defineNuxtConfig({
           type: 'image/png'
         }
       ]
+    }
+  },
+  postcss: {
+    plugins: {
+      '@tailwindcss/postcss': {}
     }
   },
   vite: {
