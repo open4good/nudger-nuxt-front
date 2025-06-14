@@ -1,10 +1,12 @@
 export default defineNuxtConfig({
   ssr: true,
+  telemetry: false,
   srcDir: 'src',
   modules: [
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    '@nuxtjs/strapi',
+// TODO : have to configure in order to make SSR build work (pobably strapi url's called at build time)
+//    '@nuxtjs/strapi',
     '@nuxtjs/seo',
     '@nuxtjs/i18n',
     '@nuxtjs/plausible',
@@ -67,7 +69,12 @@ export default defineNuxtConfig({
   },
   experimental: {
     inlineSSRStyles: true
+  },
+  vite: {
+    logLevel: 'info', // ou 'debug' si besoin
+  },
+  nitro: {
+    logLevel: 3
   }
-
 
 })
