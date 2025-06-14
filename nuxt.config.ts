@@ -70,9 +70,6 @@ export default defineNuxtConfig({
   experimental: {
     inlineSSRStyles: true
   },
-  vite: {
-    logLevel: 'info', // ou 'debug' si besoin
-  },
   nitro: {
     logLevel: 3
   }
